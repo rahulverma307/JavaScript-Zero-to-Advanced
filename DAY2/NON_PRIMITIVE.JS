@@ -33,10 +33,15 @@ console.log(username.lastname);//verma
  let name=["a","b","c",true,45]
  console.log(name);//[ 'a', 'b', 'c', true, 45 ]
 
- let anotherUser=["hitesh","choudhary",true]
- console.log(anotherUser[0]);
- console.log(anotherUser[1]);
- console.log(anotherUser[2]);
+ let anotherUser=["hitesh","luv",true]
+ console.log(anotherUser[0]);//hitesh
+ console.log(anotherUser[1]);//luv 
+ console.log(anotherUser[2]);//TRUE
+
+ let isValue =true//true always a =1
+ console.log(isValue+1)//2
+
+
  
  
  
