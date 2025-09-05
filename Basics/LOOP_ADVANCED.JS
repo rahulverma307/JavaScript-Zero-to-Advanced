@@ -46,14 +46,42 @@
   
   */
 
-  /*use for-of loop on array and skip 'herbal tea'
+  /*4.use for-of loop on array and skip 'herbal tea'
   store the other teas is an array named preferrefTeas*/
-
-  let tea=["chia","green tea","herbal","blacktea"]
+/*
+  let teas=["chia","green tea","herbal","blacktea"]
   let preferrefTeas=[];
-  for (const teaofbject) {
-    
+  for (const tea of teas) {
+    if(tea==="herbal"){
+      continue;
+    }
+    preferrefTeas.push(tea)
   }
-   
+  console.log(preferrefTeas);*/
+
+/*5. USe a `for in` loop to loop through an object conatainng city population.
+Stop the loop when the population of `"Berlin"` is
+found and store all previous cities' population in a new object named `cityPopulation`.
+
+let citiesPopulation={
+"London":8900000,
+"New York":8400000,
+"Paris":2200000,
+"Berlin":3500000
+};*/
   
+   let citiesPopulation={
+  "London":8900000,
+  "New York":8400000,
+  "Paris":2200000,
+  "Berlin":3500000
+};
+  let cityPopulation={};
+  for (const key in object) {
+   if (Object.prototype.hasOwnProperty.call(object, key)) {
+      const element = object[key];
+      
+   }
+  }
+  console.log("good night Jai Shree Ramm");
   
