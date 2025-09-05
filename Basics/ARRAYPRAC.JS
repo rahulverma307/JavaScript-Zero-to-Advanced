@@ -1,17 +1,17 @@
 // console.log("Jai Shree Ram");
 
 //Important Array Methods
-/*
-let arr = [10, 20, 30];
+
+let arr2 = [10, 20, 30];
 arr.push(40);   // [10,20,30,40]
 arr.pop();      // [10,20,30]
 arr.unshift(5); // [5,10,20,30]
 arr.shift();    // [10,20,30]
-console.log(arr);
+console.log(arr2);
 
-*/
+
 //Searching
-/*
+
 let score=[45,78,98,65,85]
 console.log(score.indexOf(85));
 console.log(score.lastIndexOf(85));
@@ -21,14 +21,13 @@ let num=[4,8,16,32,64,128,256]
 num.reverse()
 console.log(num);
 
-*/
 
 // iteration method
 // 1.Executes a function for each element in the array.
 // It does not return anything
-let arr=[5]
+let arr1=[5]
 arr.forEach((num)=>console.log(num*num)) 
-console.log(arr);
+console.log(arr1);
 
 // 2.👉 Creates a new array by applying a function to each element.
 
