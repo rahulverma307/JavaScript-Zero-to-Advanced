@@ -76,12 +76,6 @@ let citiesPopulation={
   "Paris":2200000,
   "Berlin":3500000
 };
-  let cityPopulation={};
-  for (const key in object) {
-   if (Object.prototype.hasOwnProperty.call(object, key)) {
-      const element = object[key];
-      
-   }
-  }
-  console.log("good night Jai Shree Ramm");
+let cityPopulation={}
+
   
