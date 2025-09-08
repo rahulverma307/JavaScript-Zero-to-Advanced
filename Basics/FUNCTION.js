@@ -53,15 +53,42 @@ Store the result in a variable named`totalCost`.*/
 another function, `makeTea`, as a parameter and calls it
 with tha argument `"earl grey"`.
 Returns the result of calling `makeTea`.*/
-function makeTea(typeOfTea){
-    return `maketea: ${typeOfTea}`
-}
+// function makeTea(typeOfTea){
+//     return `maketea: ${typeOfTea}`
+// }
 
-function processteaOrder(teaFunction){
-    return teaFunction("early grey")
+// function processteaOrder(teaFunction){
+//     return teaFunction("early grey")
+// }
+// let order=processteaOrder(makeTea)
+// console.log(order); 
+
+
+// function processUser(fn,a,b){
+//      return fn(a,b)
+// }
+// function score(a,b){
+//     return a+b
+// }
+// console.log(processUser(score,4,5));
+
+/*5.Write a function named`createTeaMaker` that returns another
+function. the returned function should take one parameter,`teaType`,and return a
+message like `"Makaing green tae"`.
+Store the returned function in a variable named 
+teaMaker` and call it with`"Green tea".*/
+
+function createTeaMaker(name){
+    let score=522
+    return function(teaType){
+        return `Making ${name} ${teaType}  ${score}`;
+    }
 }
-let order=processteaOrder(makeTea)
-console.log(order);
+let teaMaker=createTeaMaker("hitesh")
+let result =teaMaker("green tea")
+console.log(result);
+
+
 
 
 
