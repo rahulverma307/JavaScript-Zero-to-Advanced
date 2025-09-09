@@ -1,6 +1,6 @@
 // console.log("Jai shree Ram");
 
-/*.1
+
 let computer={
     cpu:12,
     mic:5.0
@@ -20,7 +20,28 @@ let tesla={
 }
 Object.setPrototypeOf(tesla,genericCars)
 console.log(`tesla`,Object.getPrototypeOf(tesla));
-*/
+
+
+
+//Prototype Methods in javascript
+//1.Object.create()
+let person={
+     name:"rahul",
+     rollno:4545,
+    greet: function(){
+       return ()=>{
+        return `hello ${this.name} that is your roll no:${this.rollno}`
+       };
+    }
+};
+let student=Object.create(person)
+let tea=student.greet()
+console.log(tea()); 
+
+
+
+
+
 
 
 
