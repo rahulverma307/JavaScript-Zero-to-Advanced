@@ -97,6 +97,11 @@ delete a.chai//
 console.log(a);//delete green tea
 
 
+const add=(a,b)=>a+b;
+console.log(add(4,5));
+
+
+
 
 
 
