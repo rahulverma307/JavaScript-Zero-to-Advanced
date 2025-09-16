@@ -31,14 +31,21 @@ map() → Returns new array.
 filter() → Returns array of matching elements.
 
 reduce() → Reduces to single value.*/
+//Sum of all element in a array
 
-let arr1=[1,2,3,4]
+let arr1=[10,10,20,40,20]
 let sum=0
-arr1forEach((num)=>{
+arr1.forEach((num)=>{
    sum=sum+num
 });
-console.log(sum)
+console.log(sum)//100
 
+//print each element if an array
+let arr2=[1,2,3,4,5,6]
+arr2.forEach((num)=>{
+   console.log(num)
+});
+console.log(arr2)
 
 
 
