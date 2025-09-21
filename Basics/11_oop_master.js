@@ -1,14 +1,14 @@
-// // console.log("Jia Shree Ram");
+// console.log("Jia Shree Ram");
 
-// //1. Object Literal
-// let car = {
-//     make: "toyota",
-//     model: "camry",
-//     year: "2020",
-//     start: function() {
-//         return `${this.make} car got started in ${this.year}`;
-//     }
-// };
+//1. Object Literal
+let car = {
+    make: "toyota",
+    model: "camry",
+    year: "2020",
+    start: function() {
+        return `${this.make} car got started in ${this.year}`;
+    }
+};
 
 //example=2
 //  let car1={
