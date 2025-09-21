@@ -23,9 +23,11 @@ console.log(GCET);  // we create a   object code
 /// class
 
 class Vehicle{
-    constructor(make,model) {
+    constructor(make,model ,name,year) {
         this.make=make;
         this.model=model
+        this.name=name
+        this.year=year
     }
     start(){
         return`${this.make} and ${this.model}`
@@ -37,9 +39,9 @@ console.log(cars.start());//tata and punch
 //inheritance
 class Bike extends Vehicle{
      drive(){
-        return`bike manufacture by ${this.make} and model is ${this.model} and owner name is  ${this.name} and year of purchase ${this.Fyear}`
+        return`bike manufacture by ${this.make} and model is ${this.model} and owner name is  ${this.name} and year of purchase ${this.year}`
      }
 }
-let bike = new Bike("royal Enfeild","Bullet")
+let bike = new Bike("royal Enfeild","Bullet","rahul",2025)
 console.log(bike.drive());//bike manufacture by royal Enfeild and model is Bullet
 
