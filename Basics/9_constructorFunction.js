@@ -12,6 +12,13 @@ let myCar=new Car("toyota","b6e")
 // console.log(myCar);//Car { make: 'toyota', model: 'b6e' }
 let myNewCar=new Car("tata","punch")
 // console.log(myNewCar);//Car { make: 'tata', model: 'punch' }
+let newAdm=new Person("rahul",12)
+let detail=[]
+// detail.push(newAdm)
+// console.log(detail);
+
+
+
 
 function Tea(type){
     this.type=type
@@ -35,20 +42,20 @@ let dog= new animal("dog")
 let cat= new animal("cat")
 // console.log(cat.sound());//cat makes sound
 
-function Drink(name){
-    if(!new.target){
-        throw new Error("Drink must be called with new keywords");
-    }
 
-    this.name=name
+
+
+
+// constructor funciton
+
+function Dinosaurs(type){
+    this.type=type
 }
-let tea=new Drink("tea")//Drink { name: 'tea' }
-let coffe=  Drink("coffe")//show error Drink must be called with new keywords
-console.log(tea);
-console.log(coffe);
-
-
-
+Dinosaurs.prototype.danger=function (){
+    return`${this.type} makes loud  sound`
+}
+let trex=new Dinosaurs("reptosauras")
+console.log(trex.danger());
 
 
 
