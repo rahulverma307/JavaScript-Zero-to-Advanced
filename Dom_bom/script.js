@@ -8,10 +8,9 @@
 //Example 1\=
 /*1st method
 let hold =document.getElementById("changeTextButton")
-console.log(hold);
-*/
+console.log(hold)*/
 //example=>change pragraph content
-// method 2 use addEventListener add
+// method=>2 use addEventListener add
 
 document.getElementById("changeTextButton").addEventListener('click', function (){
     let paragraph=document.getElementById("myParagraph")
@@ -35,6 +34,7 @@ console.log(cities.firstElementChild.classList.add("highlight"));
 document.getElementById("changeOrder").addEventListener("click",function(){
   let coffeType=document.getElementById("coffeType")
   coffeType.textContent="Espresso"
+  
   // coffeType.classList.add("highlight") change color in yellow and other method is
   coffeType.style.backgroundColor="brown" // change Espresso Color
   coffeType.style.padding="5px"// change Padding
@@ -55,6 +55,19 @@ document.getElementById("removeLastTask").addEventListener("click",function(){
 let task= document.getElementById("tasklist")
 task.lastElementChild.remove()// remove last elemet
 })
+
+//Example 6:
+// Event Delegation click=>work if we click on button,and dbclick=>if we bouble  click on button
+document.getElementById("clickButton").addEventListener('mouseover', function(){
+  alert("chaiCode")
+})
+
+//exmaple 7
+// select element
+document.getElementById("teaList").addEventListener('click',function(){
+  let 
+})
+
 
 
 
