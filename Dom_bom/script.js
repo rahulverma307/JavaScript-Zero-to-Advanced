@@ -75,10 +75,19 @@ document.getElementById("teaList").addEventListener('click',function(event){
 // >>
 document.getElementById("feedbackForm").addEventListener('submit',function(event){
   event.preventDefault();
-  let feedback=document.getElementById("feedbackInput")
+  let feedback=document.getElementById("feedbackInput").value
   console.log(feedback);
+  document.getElementById("feedbackDisplay").textContent= `Feedback is:${feedback}`
+
   
 })
+
+//Example 9: DOM Content Loaded
+document.addEventListener('DOMContentLoaded',function(){
+  document.getElementById('domstatus')
+})
+
+
 
 
 
