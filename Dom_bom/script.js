@@ -64,8 +64,11 @@ document.getElementById("clickButton").addEventListener('mouseover', function(){
 
 //exmaple 7
 // select element
-document.getElementById("teaList").addEventListener('click',function(){
-  let 
+document.getElementById("teaList").addEventListener('click',function(event){
+   if(event.target && event.target.matches('.teaItem')){
+     alert("you selected "+ event.target.textContent)
+   }
+   
 })
 
 
