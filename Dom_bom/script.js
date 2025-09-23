@@ -71,6 +71,15 @@ document.getElementById("teaList").addEventListener('click',function(event){
    
 })
 
+// Example 8 
+// >>
+document.getElementById("feedbackForm").addEventListener('submit',function(event){
+  event.preventDefault();
+  let feedback=document.getElementById("feedbackInput")
+  console.log(feedback);
+  
+})
+
 
 
 
