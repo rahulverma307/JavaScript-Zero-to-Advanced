@@ -1,0 +1,58 @@
+/* Make the body take full height and center content */
+body {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  height: 100vh;           /* full viewport height */
+  margin: 0;               /* remove default margin */
+  background-color:#1a1a1a; /* optional background */
+}
+
+/* Style your container */
+.container {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 400px; /* or any width you like */
+  text-align: center;
+}
+#todo-input {
+  width: 100%;                  /* full width of container */
+  padding: 10px 15px;           /* space inside input */
+  font-size: 16px;              /* readable text */
+  border: 1px solid #ccc;       /* subtle border */
+  border-radius: 5px;           /* rounded corners */
+  background-color: #f5f5f5;   /* light gray background */
+  box-sizing: border-box;       /* include padding in width */
+  transition: all 0.3s ease;
+  margin-bottom: 20px;   /* smooth effect on focus */
+}
+
+#todo-input:focus {
+  outline: none;                /* remove default outline */
+  border-color: #4CAF50;        /* green border on focus */
+  background-color: #ffffff;    /* white background on focus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* subtle glow */
+}
+
+ #add-task-btn {
+  background-color: #4CAF50; /* green background */
+  color: white;              /* text color */
+  border: none;              /* remove default border */
+  padding: 10px 20px;        /* space inside button */
+  font-size: 16px;           /* readable text */
+  border-radius: 5px;        /* rounded corners */
+  cursor: pointer;           /* pointer on hover */
+  transition: background 0.3s, transform 0.2s; /* smooth effect */
+}
+
+#add-task-btn:hover {
+  background-color: #45a049; /* darker green on hover */
+  transform: scale(1.05);    /* slightly enlarge */
+}
+
+#add-task-btn:active {
+  background-color: #3e8e41; /* pressed state */
+  transform: scale(0.98);    /* slightly shrink */
+ }
