@@ -1,0 +1,13 @@
+ body{
+            background: #1a1a1a;
+            color:#fff;
+            text-align: center;
+        }
+        .highlight{
+            background: yellow;
+            font-weight: bold;
+            color:#1a1a1a
+        }
+        .hidden{
+            display: none;
+        }
