@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;  /* horizontal center */
+            align-items: center;      /* vertical center */
+            height: 100vh;            /* full height */
+            margin: 0;                /* remove default margins */
+        }
+
+        #center {
+            display: flex;
+            flex-direction: column;   /* stack h1 and button vertically */
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="center">
+    <h1>Button Color Change When Hover on it</h1>
+    <button id="button">Hover Me</button>
+
+      <script>
+        const btn=document.getElementById("button")
+        btn.addEventListener('mouseover',()=>{
+            btn.style.backgroundColor=`hsl(${Math.random()*800},70%,50%)`
+        })
+        console.log(btn);
+        
+    </script>
+</div>
+</body>
+</html>
