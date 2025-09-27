@@ -16,6 +16,7 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   width: 400px; /* or any width you like */
   text-align: center;
+  
 }
 #todo-input {
   width: 100%;                  /* full width of container */
@@ -56,3 +57,29 @@ body {
   background-color: #3e8e41; /* pressed state */
   transform: scale(0.98);    /* slightly shrink */
  }
+
+
+#btn2{
+  background-color:rgb(246, 29, 29);
+  color:white;
+  border:none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size:medium;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgb(246, 29, 29);
+  margin-left: 200px;
+  transition: background 0.3s,tranform 0.2s;
+
+}
+#btn2:hover {
+  background-color: rgb(220, 20, 20); /* slightly darker */
+  transform: scale(1.1);              /* enlarge smoothly */
+}
+#todo-list{
+  background-color:grey;
+  padding: 14px 25px;
+  border-radius: 10px;
+  list-style-type:none;
+  
+}
