@@ -3,18 +3,18 @@ const addTaskButton=document.getElementById("add-task-btn")
 const todoList=document.getElementById("todo-list")
 
 let tasks=[]
-addTaskButton.addEventListener('click',function(){
-   const tasktext= todoInput.value.trim()
-   if(tasktext==="") return;
-   
+
+addTaskButton.addEventListener("click",function(){
+   const taskText= todoInput.value.trim()
+   if(taskText==="")return;
+
    const newTask={
     id:Date.now(),
-    text:tasktext,
+    text:taskText,
     completed:false
-
    }
    tasks.push(newTask)
-   todoInput.value=""//cler input
+   todoInput.value=""//for clear input
    console.log(tasks);
    
 })
