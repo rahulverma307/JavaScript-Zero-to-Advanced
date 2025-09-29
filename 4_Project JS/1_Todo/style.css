@@ -59,7 +59,7 @@ body {
  }
 
 
-#btn2{
+.delete-btn{
   background-color:rgb(246, 29, 29);
   color:white;
   border:none;
@@ -72,7 +72,7 @@ body {
   transition: background 0.3s,tranform 0.2s;
 
 }
-#btn2:hover {
+.delete-btn:hover {
   background-color: rgb(220, 20, 20); /* slightly darker */
   transform: scale(1.1);              /* enlarge smoothly */
 }
