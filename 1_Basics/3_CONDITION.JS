@@ -1,5 +1,5 @@
 // console.log("JAi shree Ram")
-
+/*
 //Conditional
 //1.checking if a number is greater than another number:
 
@@ -66,5 +66,16 @@ if(number>0){
     
 }else{
     console.log("Number is zero",number);
+    
+}
+*/
+//Password strength Checker
+let password="rahu"
+if(password.length<6){
+    console.log("password is weak");
+}else if(password.length<10){
+     console.log("Medium");   
+}else{
+    console.log("Strong");
     
 }
