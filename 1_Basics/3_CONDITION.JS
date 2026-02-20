@@ -56,3 +56,15 @@ if(items.length===0){
     console.log(`array is not empty and lenght is ${length}`);
 }
 
+// possitive,negative ,zero
+
+let number=5
+if(number>0){
+    console.log("NUmberis positve",number);
+}else if(number<0){
+    console.log("Number is negative",number);
+    
+}else{
+    console.log("Number is zero",number);
+    
+}
