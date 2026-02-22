@@ -70,14 +70,14 @@ console.log(nested.flat(2)); // [1,2,3,4]
 
 
 */
-
+ // Array is mutable mean original array me chnage ho sakta hi
 // Array Practice 22-02-2026
 
 let array=[78,54,true,"name","rahul","null","undefined"]
 console.log(array);// in this we stored value directly
 
-let array1=[]
-console.log(array1);// Return [] array
+// let array1=[]
+// console.log(array1);// Return [] array
 
 let array2=Array(3)
 console.log(array2);//[ <3 empty items> ]this create 3 empty slote in array
@@ -99,6 +99,40 @@ console.log(passenger);//[3]create array of value 3 and anything
 //Array.form()
 let employe=Array.from("NASA");
 console.log(employe);//[ 'N', 'A', 'S', 'A' ]  this break string in character and make array.
+
+// Array Methods --> MUtating methos(Original array change karte hain)
+
+let array1=[]
+array1.push(45,87,98,45,"true","false","null");
+console.log(array1);//[ 45, 87, 98, 45, 'true', 'false', 'null' ]
+array1.pop()// remove element from last // null
+array1.pop()// remove element from last//false
+console.log(array1);//null remove
+
+// unshitft->starting me add karta hia
+// shift-> starting se remove karta hia
+
+
+// splice->add/remove anywhere
+
+const edit=["R","A","M","J","I"]
+edit.splice(1,4)//"R" remove chnage in orignal Array
+console.log(edit);//[ 'R' ]
+
+let num=[4,8,9,7,1,2,12,4]
+num.sort()
+console.log(num);//[ 1, 12, 2, 4, 4,  7, 8, 9]
+let num1=[1,2,3,4,5,6,7,8,9]
+num1.reverse()
+console.log(num1);//[ 9, 8, 7, 6, 5, 4, 3, 2, 1];
+
+//2. None Mutating methods (New Array banate hia)
+
+
+
+
+
+
 
 
 
