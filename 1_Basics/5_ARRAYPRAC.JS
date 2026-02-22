@@ -1,5 +1,5 @@
 // console.log("Jai Shree Ram");
-
+/*
 //Important Array Methods
 
 let arr2 = [10, 20, 30];
@@ -67,6 +67,48 @@ console.log(arr.join('-')); // "1-2-99-4"
 // flat
 let nested = [1,[2,[3,4]]];
 console.log(nested.flat(2)); // [1,2,3,4]
+
+
+*/
+
+// Array Practice 22-02-2026
+
+let array=[78,54,true,"name","rahul","null","undefined"]
+console.log(array);// in this we stored value directly
+
+let array1=[]
+console.log(array1);// Return [] array
+
+let array2=Array(3)
+console.log(array2);//[ <3 empty items> ]this create 3 empty slote in array
+array2.push(2)
+console.log(array2);// [ <3 empty items>, 2 ]
+
+//length
+
+console.log(array2.length);// 4
+
+//
+let passengerName=Array("Vivek","piyush","manoj")
+console.log(passengerName);// [ 'Vivek', 'piyush', 'manoj' ] create a normal array
+
+// Array.of()
+let passenger=Array.of(3)
+console.log(passenger);//[3]create array of value 3 and anything
+
+//Array.form()
+let employe=Array.from("NASA");
+console.log(employe);//[ 'N', 'A', 'S', 'A' ]  this break string in character and make array.
+
+
+
+
+
+
+
+
+
+
 
 
 
