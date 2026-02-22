@@ -69,7 +69,7 @@ let nested = [1,[2,[3,4]]];
 console.log(nested.flat(2)); // [1,2,3,4]
 
 
-*/
+
  // Array is mutable mean original array me chnage ho sakta hi
 // Array Practice 22-02-2026
 
@@ -127,6 +127,52 @@ num1.reverse()
 console.log(num1);//[ 9, 8, 7, 6, 5, 4, 3, 2, 1];
 
 //2. None Mutating methods (New Array banate hia)
+
+//1.Slice
+
+let AgeFolder=[10,12,1,5,9,7]
+let UpdatedFolder=AgeFolder.slice(0,4)
+console.log(UpdatedFolder);//[ 10, 12, 1, 5 ] Exract part from array create an new array copy
+//2. concat Array
+let Naam="rahul"
+let nameUpdated=UpdatedFolder.concat(Naam)
+console.log(nameUpdated);//[ 10, 12, 1, 5, 'rahul' ]
+
+//3. Flat 
+
+let flats=[[454],[4454,454],[7,98,4,5]]
+let updatedFlat=flats.flat()
+console.log(updatedFlat);//[ 454,4454,454,7,98,4,5]
+//flat(infinity)-> for full flaten array
+
+
+
+// Searchin Method
+//1.Include()
+
+let MarvelHero=["ironMan","Hulk","Groot","Thor","Loki"]
+console.log(MarvelHero.includes("Hulk"));// true->check element present in array or not
+
+//2.indexOf()-- return a index number
+
+console.log(MarvelHero.indexOf("Hulk"));//1
+
+//3.find()-> Return First condition Matching value.
+let userss=[89,65,10,20,30]
+let upadtedUsers=userss.find((match)=>(match<20))
+console.log(upadtedUsers);//10*/
+
+//Looping Methods(Most asked in Interview)
+
+//1..ForEach()->just loop no retrun
+//Q1.Print all numbers from array:
+let EachNum=[10,20,30,40]
+EachNum.forEach(num=>console.log(num))
+//Q2Print only index of each element.
+EachNum.forEach((num,index)=>console.log()
+
+
+
 
 
 
