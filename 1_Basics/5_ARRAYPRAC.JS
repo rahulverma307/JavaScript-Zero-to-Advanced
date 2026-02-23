@@ -185,7 +185,7 @@ let users = [
   {name: "Rahul"},
   {name: "Amit"}
 ];
-users.forEach((add)=>add.isActive=true)
+users.forEach((addEnteries)=>addEnteries.isActive=true)
 console.log(users);
 
 //Q6 Count how many numbers are greater than 50
