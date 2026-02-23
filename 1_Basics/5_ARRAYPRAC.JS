@@ -188,6 +188,10 @@ let users = [
 users.forEach((add)=>add.isActive=true)
 console.log(users);
 
+//Q6 Count how many numbers are greater than 50
+let number1=[45,98,78,45,12,5,8,65,7,62,89,62]
+number1.forEach(num=>console.log(num>50))
+
 
 
 
