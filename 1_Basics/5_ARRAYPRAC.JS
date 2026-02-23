@@ -169,12 +169,24 @@ console.log(upadtedUsers);//10*/
 let EachNum=[10,20,30,40]
 EachNum.forEach(num=>console.log(num))
 //Q2Print only index of each element.
-EachNum.forEach((num,index)=>console.log()
+EachNum.forEach((num)=>console.log(num*num))// return square
+
+//Q3
+let arr3=["Rahul", "Amit", "Neha"];
+arr3.forEach((name)=>console.log("Hello",name));
 
 
+//Q4 increase price by 10%
+let prices = [100, 200, 300];
+prices.forEach(increase=>console.log(increase+(increase*10/100)));
 
-
-
+//Q5:Add property isActive: true to every user object
+let users = [
+  {name: "Rahul"},
+  {name: "Amit"}
+];
+users.forEach((add)=>add.isActive=true)
+console.log(users);
 
 
 
